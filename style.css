@@ -1,0 +1,94 @@
+#navBar{
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: slategray;
+    width: 100%;
+    height: 6%;
+    border-bottom: 1px solid black;
+    position: absolute;
+    justify-content: right;
+    background: rgba(59, 59, 56, .8);
+    color: white;
+}
+.full {
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.border{
+    border: solid 1px black;
+}
+
+#weatherInput {
+    padding-left: 1em;
+    margin-right: 4rem;
+    border-radius: 10px;
+}
+#main {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: lightblue;
+    color: white;
+}
+#cityFeel {
+    width: 45%;
+    height: 25%;
+}
+button {
+    border: 1px solid black;
+    background: rgb(56, 56, 53);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 0.5rem;
+}
+#city{
+    padding: 0;
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+}
+#feel {
+    margin-bottom: 0;
+}
+.grayOpac {
+    background: rgba(59, 59, 56, .7);
+}
+#weather {
+    width: 95%;
+    height: 95%;
+}
+#currentTemp p{
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+#uv{
+    font-size: 1rem !important;
+}
+.box {
+    height: 130px;
+    width: 130px;
+    margin: 20px 35px 0 35px;
+    border-radius: 5px;
+}
