@@ -16,11 +16,17 @@ const newE = (type) => document.createElement(type);
  * getWeather(location) - @param {location} - Calls API using target location  
  **************************************************************************************/
 const getWeather = async (location = V9A) => {
-    const key = '7d98db344ac643c69ab184637222007';
-    const url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${location}&aqi=no`;
-    const responseURL = await fetch(url);
-    response = responseURL.json();
-    return response;
+    try{
+        const key = '7d98db344ac643c69ab184637222007';
+        const url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${location}&aqi=no`;
+        const responseURL = await fetch(url);
+        response = responseURL.json();
+        return response;
+    }
+    catch (ex) {
+        console.log(ex);
+        return getWeather()
+    }
 }
 /*************************************************************************************
  * createNavBar() - returns basic navbar structure
