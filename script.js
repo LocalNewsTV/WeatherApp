@@ -118,7 +118,7 @@ const includeData = (source, celsius = true) => {
     const weather = newE('img');
     weather.id = 'weather';
     weather.alt = currentData.current.condition.text;
-    weather.src = 'http:' + currentData.current.condition.icon
+    weather.src = 'https:' + currentData.current.condition.icon
     $('#weatherIcon').html(weather);
     const temp = newE('p');
     if(celsius ? $(temp).html(`${currentData.current.temp_c}°C`) : $(temp).html(`${currentData.current.temp_f}°F`));
