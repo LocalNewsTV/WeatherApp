@@ -18,7 +18,7 @@ const newE = (type) => document.createElement(type);
 const getWeather = async (location = V9A) => {
     try{
         const key = '7d98db344ac643c69ab184637222007';
-        const url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${location}&aqi=no`;
+        const url = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${location}&aqi=no`;
         const responseURL = await fetch(url);
         response = responseURL.json();
         return response;
